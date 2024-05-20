@@ -5,4 +5,6 @@ const eventsRouter = express.Router();
 
 eventsRouter.get("/", eventsController.getAllEvents);
 
+eventsRouter.get("/:id", eventsController.getEventById);
+
 export default eventsRouter;

@@ -37,6 +37,18 @@ const getAllEvents = async (req, res) => {
   });
 };
 
+const getEventById = async (req, res) => {
+  const { id } = req.params;
+
+  const result = await Events.findById(id);
+  if (!result) {
+    throw HttpError(404, "Not Found");
+  }
+
+  res.json(result);
+};
+
 export default {
   getAllEvents: ctrlWrapper(getAllEvents),
+  getEventById: ctrlWrapper(getEventById),
 };
