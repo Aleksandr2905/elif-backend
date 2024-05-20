@@ -32,7 +32,7 @@ const getAllEvents = async (req, res) => {
   res.json({
     currentPage: Number(page),
     totalPages: totalPages,
-    totalProducts: totalEvents,
+    totalEvents: totalEvents,
     events: result,
   });
 };
