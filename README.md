@@ -20,4 +20,5 @@ git clone https://github.com/Aleksandr2905/elif-backend
 cd elif-backend
 
 npm install
+
 npm run start:dev
