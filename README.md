@@ -9,6 +9,7 @@ This project is a backend built with Node.js using Express and Mongoose to manag
 Clone the repository to your local machine:
 
 git clone https://github.com/Aleksandr2905/elif-backend
+
 cd elif-backend
 
 npm install
