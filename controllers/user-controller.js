@@ -21,6 +21,13 @@ const addUser = async (req, res) => {
   res.status(201).json(user);
 };
 
+const getUsers = async (req, res) => {
+  const result = await User.find();
+
+  res.json(result);
+};
+
 export default {
   addUser: ctrlWrapper(addUser),
+  getUsers: ctrlWrapper(getUsers),
 };

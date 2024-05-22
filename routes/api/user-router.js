@@ -13,4 +13,6 @@ userRouter.post(
   userController.addUser
 );
 
+userRouter.get("/", userController.getUsers);
+
 export default userRouter;
