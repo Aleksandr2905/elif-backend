@@ -3,10 +3,10 @@ import { handleSaveError, addUpdateSetting } from "./hooks.js";
 
 const eventsSchema = new Schema(
   {
-    id: {
-      type: String,
-      required: true,
-    },
+    // id: {
+    //   type: String,
+    //   required: true,
+    // },
     title: {
       type: String,
       required: true,
@@ -21,6 +21,11 @@ const eventsSchema = new Schema(
     },
     organizer: {
       type: String,
+      required: true,
+    },
+    user: {
+      type: Schema.Types.ObjectId,
+      ref: "user",
       required: true,
     },
   },
